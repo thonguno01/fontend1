@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontend 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../dist/css/main.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"> <img src="../images/logo.svg" alt="" /></a>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--subject">
+                <a href="">Tìm việc làm</a>
+            </div>
+            <div class="header__menu--subject">
+                <a href="" class="active">Máy tính</a>
+            </div>
+        </div>
+        <div class="header__user">
+            <div class="header__user--langue">
+                <span class="header__user--langueVi active">VI</span>
+                <span>|</span>
+                <span class="header__user--langueEn">EN</span>
+            </div>
+            <div class="header__user--uv">
+                <button>Họ và tên</button>
+                <nav class="header__user--uvdropdown">
+                    <ul class="menu__dropdown">
+                        <li class="menu__listElement">
+                            <a rel="nofollow" href="/vi/settings">Cài đặt </a>
+                        </li>
+                        <li class="menu__listElement">
+                            <a rel="nofollow" href="/vi/notifications">Thông báo của tôi</a>
+                        </li>
+                        <li class="menu__listElement">
+                            <a rel="nofollow" href="/vi/favorite-jobs">Nghề của tôi</a>
+                        </li>
+                        <li class="menu__listElement">
+                            <a rel="nofollow" href="/vi/logout">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__user--ntd">
+                <a>Dành cho nhà tuyển dụng</a>
+            </div>
+        </div>
+
+        <div class="header__mobiicon">
+            <img src="../images/icon-menu.svg" alt="" id="menu" />
+            <img src="../images/icon-x-menu.svg" alt="" id="cancleMenu" style="display: none" />
+        </div>
+        <div class="header__mobibody">
+            <div class="menu__wrap">
+                <div class="menu__item">
+                    <div class="menu__item--icon">
+                        <img src="../images/search.svg" alt="" />
+                    </div>
+                    <a href="" class="menu__item--name">Tìm việc làm </a>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item--icon">
+                        <img src="../images/cacular.svg" alt="" />
+                    </div>
+                    <a href="" class="menu__item--name">Máy tính thuế </a>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item--icon">
+                        <img src="../images/icon-ntd.svg" alt="" />
+                    </div>
+                    <a href="" class="menu__item--name">Dành cho nhà tuyển dụng </a>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item--icon">
+                        <img src="../images/user.svg" alt="" />
+                    </div>
+                    <a href="" class="menu__item--name">Họ và tên</a>
+                    <div class="menu__item--icondropdown">
+                        <img src="../images/icon-dropdown.svg" alt="" id="subMenuDropdownMobi" />
+                    </div>
+                </div>
+                <div class="submenu__list d-none">
+                    <div class="submenu__item">
+                        <a href="">Cài đặt </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="">Thông báo của tôi </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="">Nghề của tôi </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="">Đăng xuất </a>
+                    </div>
+                </div>
+                <div class="menu__langue">
+                    <div class="menu__langue--country active">VN</div>
+                    <span class="menu__langue--center">|</span>
+                    <div class="menu__langue--country">EN</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body">
+        <section class="top">
+            <div class="top__title">
+                <h2 class="top__title--name">Máy tính thuế thu nhập Việt Nam 2023</h2>
+                <h3 class="top__title--subname">Tìm mức lương của bạn sau thuế</h3>
+            </div>
+            <form class="top__form">
+                <div class="top__form--input">
+                    <span class="nameInput">Nhập tổng thu nhập của bạn </span>
+                    <input type="number" name="salary" min="1" max="9999999999" value="50000000" autocomplete="off" />
+                    <div class="icon-slary">
+                        <img src="../images/input__salary-icon.png" alt="salary" />
+                    </div>
+                </div>
+                <div class="top__form--input">
+                    <span class="nameInput">Mỗi </span>
+                    <select id="from-input" name="from" class="">
+                        <option value="year" selected="">Năm</option>
+                        <option value="month">Tháng</option>
+                        <option value="semimonthly">Nửa tháng</option>
+                        <option value="week">Tuần</option>
+                        <option value="day">Ngày</option>
+                        <option value="hour">Giờ</option>
+                    </select>
+                </div>
+                <div class="top__form--input">
+                    <span class="nameInput">Bạn làm ở đâu? </span>
+                    <select id="from-input" name="from" class="">
+                        <option value="Việt Nam" selected="">Việt Nam</option>
+                    </select>
+                </div>
+                <div class="top__form--button">
+                    <button type="submit">Tính toán</button>
+                </div>
+            </form>
+            <div class="top__image">
+                <img src="../images/icon__main-header.png" alt="" />
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="select">
+                <span class="select__name">Mức lương</span>
+                <div class="select__time">
+                    <span class="select__time--detail">
+                        <input type="radio" id="option-year" name="option" class="" value="" checked />
+                        <label for="option-year" class="option" id="option-year-label">Năm
+                        </label>
+                    </span>
+                    <span class="select__time--detail">
+                        <input type="radio" id="option-month" name="option" class="" value="" />
+                        <label for="option-month" class="option" id="option-month-label">Tháng</label>
+                    </span>
+                    <span class="select__time--detail">
+                        <input type="radio" id="option-half-month" name="option" class="" value="" />
+                        <label for="option-half-month" class="option" id="option-half-month-label">Nửa tháng</label>
+                    </span>
+                    <span class="select__time--detail">
+                        <input type="radio" id="option-week" name="option" class="" value="" />
+                        <label for="option-week" class="option" id="option-week-label">Tuần</label>
+                    </span>
+                    <span class="select__time--detail">
+                        <input type="radio" id="option-day" name="option" class="" value="" />
+                        <label for="option-day" class="option" id="option-day-label">Ngày</label>
+                    </span>
+                    <span class="select__time--detail">
+                        <input type="radio" id="option-hour" name="option" class="" value="" />
+                        <label for="option-hour" class="option" id="option-hour-label">Giờ</label>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cacular">
+            <div class="cacular__title">
+                <h3 class="">Khấu trừ</h3>
+            </div>
+            <div class="cacular__detail">
+                <div class="cacular__detail--left">
+                    <div class="item">
+                        <span class="item_name bold">Lương</span>
+                        <span class="item_money bold">981,000₫</span>
+                    </div>
+                    <div class="item">
+                        <span class="item_name">An ninh xã hội</span>
+                        <span class="item_money">- 981,000₫</span>
+                    </div>
+                    <div class="item">
+                        <span class="item_name">Bảo hiểm y tế</span>
+                        <span class="item_money">- 981,000₫</span>
+                    </div>
+                    <div class="item">
+                        <span class="item_name">Bảo hiểm thất nghiệp</span>
+                        <span class="item_money">- 981,000₫</span>
+                    </div>
+                    <div class="item">
+                        <span class="item_name">Thuế thu nhập</span>
+                        <span class="item_money">-981,000₫</span>
+                    </div>
+                    <div class="item"></div>
+                    <div class="item">
+                        <span class="item_name bold">Tổng số thuế</span>
+                        <span class="item_money bold">- 311,979₫</span>
+                    </div>
+                    <div class="item">
+                        <span class="item_name bold big-size">Trả bằng tiền mặt</span>
+                        <span class="item_money bold big-size">1,771,354₫</span>
+                    </div>
+                    <div class="item"></div>
+                    <div class="item">
+                        <span class="item_name">Thuế suất cận biên</span>
+                        <span class="item_money">15%</span>
+                    </div>
+                    <div class="item">
+                        <span class="item_name">Thuế suất trung bình</span>
+                        <span class="item_money">15%</span>
+                    </div>
+                </div>
+                <div class="cacular__detail--right">
+                    <div class="chart">
+                        <div class="chart__container">
+                            <div class="chart__container--number">15.0%</div>
+                            <div class="chart__container--label">Tổng thuế</div>
+                        </div>
+                        <div class="chart__image">
+                            <img src="../images/chart.svg" alt="chart" />
+                        </div>
+                        <div class="chart__container">
+                            <div class="chart__container--number">85.0%</div>
+                            <div class="chart__container--label">Net pay</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="c-card--shadow">
+                <div class="c-taxBerg__container">
+                    <div class="c-taxBerg__title">Taxberg</div>
+                    <div class="l-taxBerg__holder">
+                        <div class="l-taxBerg__cloud--left c-taxBerg__clouds--animate">
+                            <img src="../images/cloud_left.png" alt="" />
+                        </div>
+                        <div class="l-taxBerg__cloud--right">
+                            <img src="../images/cloud_right.png" alt="" />
+                        </div>
+                        <div class="l-taxBerg__frame">
+                            <div class="l-dots__holder" style="bottom: 0px">
+                                <div class="l-dash--net c-taxBerg__dash">
+                                    <div class="l-taxBerg__dots-container">
+                                        <div class="c-taxBerg__dots"></div>
+                                    </div>
+                                </div>
+                                <div class="l-net-pay__text l-taxBerg__text-holder c_taxBerg__tax-text--dark">
+                                    <div class="c_taxBerg__tax-text timeBased">
+                                        42,512,500 ₫
+                                    </div>
+                                    <div class="c-taxBerg__subtitle">Trả bằng tiền mặt</div>
+                                </div>
+                                <div class="l-dash--emp c-taxBerg__dash" style="">
+                                    <div class="l-taxBerg__dots-container">
+                                        <div class="c-taxBerg__dots c-taxBerg__dots--emp"></div>
+                                    </div>
+                                </div>
+                                <div class="l-emp-pay__text l-taxBerg__text-holder" style="">
+                                    <div class="c_taxBerg__tax-text timeBased">
+                                        10,750,000 ₫
+                                    </div>
+                                    <div class="c-taxBerg__subtitle">
+                                        Thuế mà người sử dụng lao động trả
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-dash--you c-taxBerg__dash">
+                                <div class="l-taxBerg__dots-container">
+                                    <div class="c-taxBerg__dots"></div>
+                                </div>
+                            </div>
+                            <div class="l-net-you__text l-taxBerg__text-holder">
+                                <div class="c_taxBerg__tax-text timeBased">
+                                    7,487,500 ₫
+                                </div>
+                                <div class="c-taxBerg__subtitle">Thuế bạn phải trả</div>
+                            </div>
+                            <div class="c-taxBerg__ice-img" style="bottom: 200px">
+                                <div class="c-taxBerg__boat">
+                                    <img class="c-taxBerg__flag" src="../images/vn.png" alt="" />
+                                    <img src="../images/iceberg.png" alt="" />
+                                </div>
+
+                                <div class="l-taxBerg__ice-pieces">
+                                    <img src="../images/icepieces2.gif" alt="" />
+                                </div>
+                            </div>
+                            <div class="c-taxBerg__water--top" style="bottom: 0px"></div>
+                            <div class="c-taxBerg__water--middle" style="bottom: -24.650205761317px"></div>
+                        </div>
+                        <div class="c-taxBerg__water--bottom"></div>
+                        <div class="l-total-tax">
+                            <div class="l-total-tax-text">
+                                <div class="c-total-tax__title">Tổng số tiền thuế đã trả</div>
+
+                                <div class="c-total-tax__number timeBased">
+                                    18,237,500 ₫
+                                </div>
+
+                                <div class="c-total-tax__info">
+                                    <div class="timeBased">
+                                        Bạn có biết chủ lao động của bạn cũng đóng thuế trên lương
+                                        của bạn không? Để trả bạn 50,000,000 ₫, chủ lao động phải
+                                        mất 10,750,000 ₫. Nói cách khác, mỗi khi bạn tiêu 10 ₫ từ
+                                        số tiền bạn vất vả kiếm được, 3.65 ₫ được đóng cho chính
+                                        phủ.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-total-tax-text">
+                                <div class="c-total-tax__title">Thuế suất thực</div>
+                                <div class="c-total-tax__number">30.0%</div>
+                                <div class="c-total-tax__info">
+                                    Vì vậy, khi bạn và chủ lao động đều đóng thuế, mức thuế suất
+                                    cũ 15% giờ tăng lên 30.0%, có nghĩa là mức thuế suất thực
+                                    của bạn cao hơn mức thuế suất ban đầu 15%.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="task">
+            <div class="task__title">
+                <span>Mọi người cũng yêu cầu</span>
+            </div>
+            <div class="task__content">
+                <div class="task__content--link">
+                    <a href="">
+                        <span>50,000,000 ₫ mỗi năm là bao nhiêu mỗi giờ?</span>
+                        <img src="../images/arrow_right.png" alt="">
+                    </a>
+                </div>
+                <div class="task__content--link">
+                    <a href="">
+                        <aspan>24,038 ₫ mỗi giờ là bao nhiêu mỗi năm?</aspan>
+                        <img src="../images/arrow_right.png" alt="">
+                    </a>
+                </div>
+                <div class="task__content--link">
+                    <a href="">
+                        <span>Mức lương trung bình trong Việt Nam?</span>
+                        <img src="../images/arrow_right.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="total">
+            <div class="total__title">
+                Tổng cộng
+            </div>
+
+            <div class="total__split"></div>
+            <div class="total__content">
+                Nếu bạn kiếm được <strong>50,000,000</strong> ₫ một năm khi sống ở <strong>Việt Nam</strong>, bạn sẽ
+                phải đóng thuế <strong> 7,487,500 ₫</strong>. Điều đó
+                có nghĩa lương ròng của bạn sẽ là <strong>42,512,500 ₫</strong> mỗi năm, hoặc <strong>3,542,708
+                    ₫</strong> mỗi tháng. Mức thuế suất trung
+                bình của bạn là <strong>15.0% </strong>và mức thuế suất cận biên của bạn là <strong>15.0%</strong>. Mức
+                thuế suất cận biên này có nghĩa là
+                thu nhập gia tăng tiếp theo của bạn sẽ bị tính thuế ở mức thuế suất này. Ví dụ, nếu lương của bạn tăng
+                <strong> 100 ₫</strong>, phần gia tăng này sẽ bị tính thuế <strong>14.98 ₫</strong>, vì vậy, lương ròng
+                của bạn sẽ chỉ tăng <strong>85.02 ₫</strong>.
+            </div>
+            <div class="total__title">
+                Ví dụ về thưởng
+            </div>
+            <div class="total__split"></div>
+            <div class="total__content--bonus">
+                Phần thưởng <strong>1,000 ₫</strong> sẽ tạo thêm <strong>850 ₫</strong> cho thu nhập ròng. Phần thưởng
+                <strong>5,000 ₫</strong> sẽ tạo thêm <strong>4,251 ₫</strong> cho thu
+                nhập ròng.
+            </div>
+        </section>
+        <section class="graph">
+            <div class="graph__title">
+                So sánh thuế trung bình
+            </div>
+            <div class="graph__axisy">
+                <input type="button" value="Lương">
+            </div>
+            <div class="graph__canvas">
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+
+       <section class="incometax">
+            <div class="incometax__title">
+                Thuế thu nhập
+            </div>  
+            <div class="incometax__content">
+                <a href=""><div>100,000 ₫</div></a>
+                <a href=""><div>500,000 ₫</div></a>
+                <a href=""><div>1,000,000 ₫</div></a>
+                <a href=""><div>1,500,000 ₫</div></a>
+                <a href=""><div>2,000,000 ₫</div></a>
+                <a href=""><div>2,500,000 ₫</div></a>
+                <a href=""><div>3,000,000 ₫</div></a>
+                <a href=""><div>4,000,000 ₫</div></a>
+                <a href=""><div>4,500,000 ₫</div></a>
+                <a href=""><div>5,000,000 ₫</div></a>
+                <a href=""><div>5,500,000 ₫</div></a>
+                <a href=""><div>6,000,000 ₫</div></a>
+                <a href=""><div>6,500,000 ₫</div></a>
+                <a href=""><div>7,000,000 ₫</div></a>
+                <a href=""><div>7,500,000 ₫</div></a>
+            </div>
+        </section>
+
+        <section class="table">
+            <div class="table__title">
+                Châu Âu
+            </div>
+            <div class="table__row">
+                <div class="table__row--th">
+                    <div class="table__row--td textStart">Quốc Gia</div>
+                    <div class="table__row--td">Net Pay</div>
+                    <div class="table__row--td">Thuế Trung Bình</div>
+                    <div class="table__row--td">Cấp</div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Vương quốc Anh</span>
+                    </div>
+                    <div class="table__row--td ">VND 49999928</div>
+                    <div class="table__row--td">0.0%</div>
+                    <div class="table__row--td"><span class="rank_best">1</span></div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Vương quốc Anh</span>
+                    </div>
+                    <div class="table__row--td ">VND 49999928</div>
+                    <div class="table__row--td">0.0%</div>
+                    <div class="table__row--td"><span>1</span></div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Vương quốc Anh</span>
+                    </div>
+                    <div class="table__row--td ">VND 49999928</div>
+                    <div class="table__row--td">0.0%</div>
+                    <div class="table__row--td"><span>1</span></div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Vương quốc Anh</span>
+                    </div>
+                    <div class="table__row--td ">VND 49999928</div>
+                    <div class="table__row--td">0.0%</div>
+                    <div class="table__row--td"><span class="last_rank">23</span></div>
+                </div>
+                <div class="table__row--button">
+                    <button>Hiển thị thêm</button>
+                </div>
+            </div>
+        </section>
+        <section class="table">
+            <div class="table__title">
+                Bắc Mỹ
+            </div>
+            <div class="table__row">
+                <div class="table__row--th">
+                    <div class="table__row--td textStart">Quốc Gia</div>
+                    <div class="table__row--td">Net Pay</div>
+                    <div class="table__row--td">Thuế Trung Bình</div>
+                    <div class="table__row--td">Cấp</div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Hoa Kỳ</span>
+                    </div>
+                    <div class="table__row--td ">VND 45669466</div>
+                    <div class="table__row--td">8.7%</div>
+                    <div class="table__row--td"><span class="rank_best">1</span></div>
+                </div>
+                
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Hoa Kỳ</span>
+                    </div>
+                    <div class="table__row--td ">VND 45669466</div>
+                    <div class="table__row--td">8.7%</div>
+                    <div class="table__row--td"><span class="last_rank">2</span></div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="table">
+            <div class="table__title">
+                Châu Á / Thái Bình Dương
+            </div>
+            <div class="table__row">
+                <div class="table__row--th">
+                    <div class="table__row--td textStart">Quốc Gia</div>
+                    <div class="table__row--td">Net Pay</div>
+                    <div class="table__row--td">Thuế Trung Bình</div>
+                    <div class="table__row--td">Cấp</div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Úc</span>
+                    </div>
+                    <div class="table__row--td ">VND 50000077</div>
+                    <div class="table__row--td">0.0%</div>
+                    <div class="table__row--td"><span class="rank_best">1</span></div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="table">
+            <div class="table__title">
+                Mỹ La-tinh
+            </div>
+            <div class="table__row">
+                <div class="table__row--th">
+                    <div class="table__row--td textStart">Quốc Gia</div>
+                    <div class="table__row--td">Net Pay</div>
+                    <div class="table__row--td">Thuế Trung Bình</div>
+                    <div class="table__row--td">Cấp</div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Úc</span>
+                    </div>
+                    <div class="table__row--td ">VND 50000077</div>
+                    <div class="table__row--td">0.0%</div>
+                    <div class="table__row--td"><span class="rank_best">1</span></div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="table">
+            <div class="table__title">
+                Châu Phi
+            </div>
+            <div class="table__row">
+                <div class="table__row--th">
+                    <div class="table__row--td textStart">Quốc Gia</div>
+                    <div class="table__row--td">Net Pay</div>
+                    <div class="table__row--td">Thuế Trung Bình</div>
+                    <div class="table__row--td">Cấp</div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Úc</span>
+                    </div>
+                    <div class="table__row--td ">VND 50000077</div>
+                    <div class="table__row--td">0.0%</div>
+                    <div class="table__row--td"><span class="rank_best">1</span></div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="table">
+            <div class="table__title">
+                Trung đông
+            </div>
+            <div class="table__row">
+                <div class="table__row--th">
+                    <div class="table__row--td textStart">Quốc Gia</div>
+                    <div class="table__row--td">Net Pay</div>
+                    <div class="table__row--td">Thuế Trung Bình</div>
+                    <div class="table__row--td">Cấp</div>
+                </div>
+                <div class="table__row--tr">
+                    <div class="table__row--td textStart col1">
+                        <img src="../images/gb.png" alt="">
+                        <span>Úc</span>
+                    </div>
+                    <div class="table__row--td ">VND 50000077</div>
+                    <div class="table__row--td">0.0%</div>
+                    <div class="table__row--td"><span class="rank_best">1</span></div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="note">
+            <div class="note__text">
+                LƯU Ý *Khấu trừ được tính dựa trên các bảng của Việt Nam, thuế thu nhập. Để đơn giản hóa, một số biến số (như tình trạng hôn nhân và các biến khác) đã được giả định. Tài liệu này không đại diện cho thẩm quyền pháp lý và sẽ chỉ được sử dụng cho mục đích gần đúng.
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__container--title">
+                Dành cho người tìm việc
+                <div class="icondropdown">
+                    <img src="../images/icon-dropdown.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__container--link">
+                <div class="list">
+                    <a href="#">Tìm việc làm</a>
+                    <a href="#">Tìm kiếm tiền lương</a>
+                    <a href="#">Máy tính thuế</a>
+                    <a href="#">Công cụ chuyển đổi tiền lương</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__split"></div>
+        <div class="footer__container">
+            <div class="footer__container--title">
+                Talent.com
+                <div class="icondropdown">
+                    <img src="../images/icon-dropdown.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__container--link">
+                <div class="list">
+                    <a href="#">Liên hệ</a>
+                    <a href="#">Các quốc gia khác</a>
+                    <a href="#">Điều khoản dịch vụ, Chính sách quyền riêng tư và Chính sách cookie</a>
+                    <a href="#">Cài đặt cookie</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__container">
+            <div class="footer__container--image">
+                <div class="image">
+                    <img src="../images/logo.png" alt="">
+                </div>
+                <div>© 2023 Talent.com</div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu").on("click", function () {
+                $(".header__mobibody").fadeIn();
+                $("#cancleMenu").css("display", "block");
+                $("#menu").css("display", "none");
+            });
+            $("#cancleMenu").on("click", function () {
+                $(".header__mobibody").fadeOut();
+                $("#cancleMenu").css("display", "none");
+                $("#menu").css("display", "block");
+            });
+            $("#subMenuDropdownMobi").on("click", function () {
+                if ($(".submenu__list").hasClass("d-none")) {
+                    $(".submenu__list").fadeIn();
+                    $(".submenu__list").removeClass("d-none");
+                } else {
+                    $(".submenu__list").addClass("d-none");
+                    $(".submenu__list").fadeOut();
+                }
+            });
+            $('footer .icondropdown').on('click' ,(e)=>{
+                let current = e.currentTarget.parentElement.parentElement;
+                let list = $(current).find('.footer__container--link');
+                if(list.hasClass('fadeout')){
+                    list.removeClass('fadeout')
+                    list.fadeOut();
+                } else{ 
+                    list.fadeIn()
+                    list.addClass('fadeout')
+                }
+                $('footer').get(0).scrollIntoView();
+            })
+        });
+        const xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 5000],
+                    borderColor: "red",
+                    fill: false
+                }, {
+                    data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+                    borderColor: "green",
+                    fill: false
+                }]
+            },
+            options: {
+                legend: { display: false }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+<svg id="pie-chart-svg" height="160" width="160" style="transform:rotate(-62.365847948004deg)">
+                                    <circle class="under-circle-small" r="70" cx="80" cy="80"></circle>
+                                    <circle id="chart_pay_value" class="stroke-circle-small" style="stroke-dasharray:186.15 219.9" r="35" cx="80" cy="80">
+                                    </circle>
+                                </svg>

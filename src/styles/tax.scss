@@ -1,0 +1,408 @@
+.l-taxBerg__frame {
+    height: 600px;
+}
+
+.c-taxBerg__container {
+    background: radial-gradient(77.83% 77.83% at 49.94% 59.95%, rgba(157, 233, 246, 0) 0%, #9DE9F6 100%);
+    position: relative;
+    max-width: 640px;
+    height: 800px;
+    width: 100%;
+    padding: initial;
+    overflow: hidden;
+    margin-bottom: initial;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.c-taxBerg__container img {
+    width: inherit;
+}
+
+.c-taxBerg__title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #30183F;
+}
+
+.l-taxBerg__holder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.l-taxBerg__cloud--left {
+    width: 110px;
+    position: absolute;
+    left: 60px;
+    top: 8px;
+}
+
+
+.l-taxBerg__cloud--right {
+    width: 135px;
+    position: absolute;
+    right: 65px;
+    top: 48px;
+}
+
+.c-taxBerg__clouds--animate {
+    position: absolute;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: right;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes right {
+    100% {
+        left: 20%;
+    }
+}
+
+.l-taxBerg__frame {
+    overflow: hidden;
+    position: relative;
+}
+
+.l-dots__holder {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.c-taxBerg__dash {
+    left: 36%;
+    -webkit-transform: translate(-32.8%, 0);
+    position: relative;
+    border: 0.6px dashed #ffa500;
+    width: 19%;
+    top: 0;
+    z-index: 5;
+    height: 0;
+}
+
+.l-dash--net {
+    top: 163px;
+    left: 37%;
+    -webkit-transform: translate(-37%, 0);
+}
+
+.l-taxBerg__dots-container {
+    float: right;
+    height: 15px;
+    width: 15PX;
+    border-radius: 45px;
+    margin-top: -8px;
+    position: relative;
+    left: 13px;
+}
+
+.c-taxBerg__dots {
+    background: #ffa500;
+    height: 7px;
+    width: 7px;
+    position: relative;
+    top: 3px;
+    left: 0;
+    border-radius: 120px;
+}
+
+.l-taxBerg__text-holder {
+    color: white;
+    z-index: 20;
+    position: absolute;
+    text-align: right;
+    width: 140px;
+    white-space: nowrap;
+}
+
+.c_taxBerg__tax-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.c_taxBerg__tax-text--dark {
+    color: var(--purple-dark);
+}
+
+.l-dash--emp .l-taxBerg__dots-container {
+    border-color: orange;
+    float: left;
+    left: initial;
+    right: 12px;
+}
+
+.l-dash--emp {
+    border-color: orange;
+    top: 375px;
+    left: 62.2%;
+    -webkit-transform: translate(-60.2%, 0);
+}
+
+.c-taxBerg__dots--emp {
+    left: 3px;
+}
+
+.l-net-pay__text {
+    bottom: 416px;
+    left: 45px;
+}
+
+.l-emp-pay__text {
+    right: 45px;
+    top: 350px;
+    text-align: left;
+}
+
+.l-total-tax {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 11px 10px;
+}
+
+.l-total-tax-text {
+    width: 281px;
+    color: white;
+    padding: 20px;
+}
+
+.c-total-tax__title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.c-total-tax__number {
+    padding: 0;
+    font-size: 34px;
+    padding-bottom: 6px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.c-total-tax__info {
+    line-height: 22px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.l-total__real-tax {
+    right: 0;
+}
+
+.l-dash--you {
+    top: 322px;
+    border-color: orange;
+    width: 19%;
+}
+
+.l-dash--you .l-taxBerg__dots-container {
+    border-color: orange;
+    left: 17px;
+}
+
+.l-dash--you .l-taxBerg__dots-container .c-taxBerg__dots {
+    background: orange;
+}
+
+.c-taxBerg__subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    white-space: normal;
+}
+
+.l-net-you__text {
+    bottom: 250px;
+    left: 45px;
+}
+
+.c-taxBerg__ice-img img {
+    width: inherit;
+}
+
+.c-taxBerg__ice-img {
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    height: 300px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+}
+
+.c-taxBerg__water--top {
+    width: 100%;
+    background: linear-gradient(rgb(99, 218, 255), rgb(47, 115, 136));
+    background-blend-mode: multiply;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode: multiply;
+    bottom: 0;
+    background-image: url("https://cdn-static.talent.com/img/misc/water.webp");
+    background-size: contain;
+    background-repeat: round;
+    background-position-y: top;
+}
+
+.c-taxBerg__water--middle {
+    height: 300px;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    background: #3cb2ce;
+    mix-blend-mode: multiply;
+    bottom: 0px;
+}
+
+.c-taxBerg__water--bottom {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: 0;
+    background: #004260;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.l-taxBerg__ice-pieces {
+    width: 160px;
+    margin: auto;
+    position: relative;
+    margin-top: -90px;
+}
+
+@keyframes ice {
+    50% {
+        transform: rotate(-3deg) translateY(-5px)
+    }
+}
+
+.c-taxBerg__boat {
+    animation: ice 4s ease-in-out infinite;
+    transform-origin: center;
+    height: 300px;
+    width: 300px;
+}
+
+.c-taxBerg__flag {
+    width: 16px !important;
+    height: 11px;
+    position: absolute;
+    left: 141px;
+    top: 8px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .c-taxBerg__container {
+        /*height: initial;*/
+        height: 1000px;
+        margin-top: 10px;
+    }
+
+    .c-taxBerg__water--top {
+        background-repeat: round;
+        background-position-x: 0;
+        /* height: 640px; */
+        width: 600px;
+        box-sizing: border-box;
+    }
+
+    .l-total-tax-text {
+        width: 100%;
+        bottom: 140px;
+        padding-left: 10px;
+        padding-bottom: 0;
+        position: relative;
+        display: inline-block;
+        height: initial;
+        margin-top: 30px;
+        top: -25px;
+    }
+
+    .deep-water-info {
+        height: 56%;
+    }
+
+    .c-taxBerg__water--bottom {
+        height: 56% !important;
+    }
+
+    .l-emp-pay__text {
+        right: 10px;
+        top: 353px;
+    }
+
+    .l-taxBerg__cloud--right {
+        right: 20px;
+        top: 40px;
+    }
+
+    .l-taxBerg__cloud--left {
+        left: 40px;
+    }
+
+    .c_taxBerg__tax-text {
+        text-align: left;
+        width: initial;
+        font-size: 16px;
+    }
+
+    .l-emp-pay__text {
+        right: 14px;
+    }
+
+    .l-dash--emp {
+        right: 43.5%;
+    }
+
+    .l-emp-pay__text .c-taxBerg__subtitle,
+    .l-emp-pay__text .c_taxBerg__tax-text {
+        text-align: right;
+        width: initial;
+    }
+
+    .l-net-you__text {
+        left: -4px;
+        bottom: 258px;
+        font-size: 19px;
+    }
+
+
+    .l-dash--emp .l-taxBerg__dots-container {
+        right: initial;
+        float: left;
+        left: -6px;
+    }
+
+    .l-total-tax {
+        display: block;
+
+        box-sizing: border-box;
+        padding: 12px;
+    }
+
+    .c-taxBerg__subtitle {
+        text-align: left;
+        width: initial;
+    }
+
+    .l-net-pay__text {
+        bottom: 416px;
+        left: 14px;
+    }
+
+    .l-net-you__text {
+        left: 14px;
+        bottom: 258px;
+        font-size: 19px;
+    }
+}
